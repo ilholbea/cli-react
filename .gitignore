@@ -3,3 +3,4 @@ cli_screenshots
 *.iml
 .vscode
 node_modules/
+dist/
