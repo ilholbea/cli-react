@@ -1,1 +1,6 @@
-.BasicInstallation {}
+@media screen and (min-width:680px){
+    .wrapper-xl{
+        width: 80%;
+        height: 80%;
+    }
+}

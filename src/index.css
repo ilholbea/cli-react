@@ -2,42 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.background{
-    @apply bg-gray-100;
-}
-
-.btn {
-    @apply font-bold py-12 px-24 rounded w-80 text-center;
-}
-
-.btn-blue {
-    @apply bg-blue-500 text-white;
-}
-
-.btn-blue:hover {
-    @apply bg-blue-700;
-}
-
-
-.btn-green{
-    @apply bg-green-500 text-white;
-}
-
-.btn-green:hover {
-    @apply bg-green-700;
-}
-
-.btn-yellow{
-    @apply bg-yellow-500 text-white;
-}
-
-.btn-yellow:hover {
-    @apply bg-yellow-700;
-}
-
 @media screen and (min-width:680px){
     .wrapper{
-        width:680px;
-        height:450px;
+        width:720px;
+        height:480px;
     }
 }

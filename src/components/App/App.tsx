@@ -7,7 +7,7 @@ import upgradeNamespaceImage from '../../assets/images/upgrade.png'
 
 const App = () => {
     return (
-        <div className="w-full bg-gray-800 h-screen sm:flex items-center">
+        <div className="w-full h-screen sm:flex items-center">
             <div
                 className="bg-gray-900 text-center px-12 pt-16 pb-20 wrapper sm:flex justify-center flex-col sm:mx-auto">
                 <h1 className="text-white text-lg tracking-wide mb-7">Select your desired action.</h1>
@@ -15,16 +15,14 @@ const App = () => {
                     <Link to="/base-installation">
                         <div
                             className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={baseInstallationImage} alt="Base Installation"
-                                 className="w-24 h-24"/>
+                            <img src={baseInstallationImage} alt="Base Installation" className="w-24"/>
                             <p className="mt-2">Base Installation</p>
                         </div>
                     </Link>
                     <Link to="/configure-namespace">
                         <div
                             className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={configureNamespaceImage}
-                                 alt="Avatar" className="w-24 h-24"/>
+                            <img src={configureNamespaceImage} alt="Avatar" className="w-24"/>
                             <p className="mt-2">Configure Namespace</p>
                         </div>
                     </Link>
@@ -32,8 +30,7 @@ const App = () => {
                     <Link to="/upgrade-namespace">
                         <div
                             className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={upgradeNamespaceImage}
-                                 alt="Avatar" className="w-24 h-24"/>
+                            <img src={upgradeNamespaceImage} alt="Avatar" className="w-24"/>
                             <p className="mt-2">Upgrade Namespace</p>
                         </div>
                     </Link>
