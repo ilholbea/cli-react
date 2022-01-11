@@ -34,3 +34,10 @@
 .btn-yellow:hover {
     @apply bg-yellow-700;
 }
+
+@media screen and (min-width:680px){
+    .wrapper{
+        width:680px;
+        height:450px;
+    }
+}
