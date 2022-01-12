@@ -2,36 +2,36 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import baseInstallationImage from '../../assets/images/install.png'
 import configureNamespaceImage from '../../assets/images/configure.png'
-import upgradeNamespaceImage from '../../assets/images/upgrade.png'
+import upgradeNamespaceImage from '../../assets/images/upgrade2.png'
 
 
 const App = () => {
     return (
         <div className="w-full h-screen sm:flex items-center">
             <div
-                className="bg-gray-900 text-center px-12 pt-16 pb-20 wrapper sm:flex justify-center flex-col sm:mx-auto">
-                <h1 className="text-white text-lg tracking-wide mb-7">Select your desired action.</h1>
-                <div className="grid gap-5 sm:grid-cols-3 mx-auto">
+                className="bg-gray-300 text-center px-12 pt-16 pb-20 wrapper sm:flex justify-center flex-col sm:mx-auto">
+                <h1 className="text-blue-900 text-3xl tracking-wide mb-48">Select your desired action.</h1>
+                <div className="grid gap-96 sm:grid-cols-3 mx-auto">
                     <Link to="/base-installation">
                         <div
-                            className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
+                            className="text-black bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
                             <img src={baseInstallationImage} alt="Base Installation" className="w-24"/>
-                            <p className="mt-2">Base Installation</p>
+                            <p className="mt-2 w-3/4">Base Installation</p>
                         </div>
                     </Link>
                     <Link to="/configure-namespace">
                         <div
-                            className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
+                            className="text-white bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
                             <img src={configureNamespaceImage} alt="Avatar" className="w-24"/>
-                            <p className="mt-2">Configure Namespace</p>
+                            <p className="mt-2 w-3/4">Configure Namespace</p>
                         </div>
                     </Link>
 
                     <Link to="/upgrade-namespace">
                         <div
-                            className="text-white bg-gray-800 w-40 h-48 rounded-md justify-self-center flex flex-col justify-center items-center">
+                            className="text-white bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
                             <img src={upgradeNamespaceImage} alt="Avatar" className="w-24"/>
-                            <p className="mt-2">Upgrade Namespace</p>
+                            <p className="mt-2 w-3/4">Upgrade Namespace</p>
                         </div>
                     </Link>
                 </div>
