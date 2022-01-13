@@ -2,37 +2,35 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import baseInstallationImage from '../../assets/images/install.png'
 import configureNamespaceImage from '../../assets/images/configure.png'
-import upgradeNamespaceImage from '../../assets/images/upgrade2.png'
+import upgradeNamespaceImage from '../../assets/images/upgrade.png'
+import ReactTooltip from 'react-tooltip';
 
 
 const App = () => {
     return (
         <div className="w-full h-screen sm:flex items-center">
             <div
-                className="bg-gray-300 text-center px-12 pt-16 pb-20 wrapper sm:flex justify-center flex-col sm:mx-auto">
-                <h1 className="text-blue-900 text-3xl tracking-wide mb-48">Select your desired action.</h1>
-                <div className="grid gap-96 sm:grid-cols-3 mx-auto">
-                    <Link to="/base-installation">
-                        <div
-                            className="text-black bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={baseInstallationImage} alt="Base Installation" className="w-24"/>
-                            <p className="mt-2 w-3/4">Base Installation</p>
+                className="text-center px-12 pt-16 pb-20 wrapper sm:flex justify-center flex-col sm:mx-auto">
+                <h1 className="text-yale-blue text-4xl tracking-wide mb-48"> Select your desired action</h1>
+                <div className="flex justify-evenly">
+                    <Link to="/base-installation" className="flex flex-col items-center">
+                        <div className="bg-steel-blue w-48 h-48 rounded-full p-8">
+                            <img src={baseInstallationImage} alt="Base Installation"/>
                         </div>
+                        <p className="mt-2 text-heat-wave text-xl w-3/4">Base Installation</p>
                     </Link>
-                    <Link to="/configure-namespace">
-                        <div
-                            className="text-white bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={configureNamespaceImage} alt="Avatar" className="w-24"/>
-                            <p className="mt-2 w-3/4">Configure Namespace</p>
+                    <Link to="/configure-namespace" className="flex flex-col items-center">
+                        <div className="bg-steel-blue w-48 h-48 rounded-full p-8">
+                            <img src={configureNamespaceImage} alt="Configure Namespace"/>
                         </div>
+                        <p className="mt-2 text-heat-wave text-xl w-3/4">Configure Namespace</p>
                     </Link>
 
-                    <Link to="/upgrade-namespace">
-                        <div
-                            className="text-white bg-indigo-400 w-60 h-72 rounded-md justify-self-center flex flex-col justify-center items-center">
-                            <img src={upgradeNamespaceImage} alt="Avatar" className="w-24"/>
-                            <p className="mt-2 w-3/4">Upgrade Namespace</p>
+                    <Link to="/upgrade-namespace" className="flex flex-col items-center align-end">
+                        <div className="bg-steel-blue w-48 h-48 rounded-full p-8">
+                            <img src={upgradeNamespaceImage} alt="Upgrade Namespace" className="mt-2"/>
                         </div>
+                        <p className="mt-2 text-heat-wave text-xl w-3/4">Upgrade Namespace</p>
                     </Link>
                 </div>
             </div>
