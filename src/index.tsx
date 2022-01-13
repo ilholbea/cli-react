@@ -4,7 +4,7 @@ import './index.css';
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import BasicInstallation from './components/BasicInstallation/BasicInstallation';
+import BaseInstallation from './components/BaseInstallation/BaseInstallation';
 import ConfigureNamespace from './components/ConfigureNamespace/ConfigureNamespace';
 import UpgradeNamespace from './components/UpgradeNamespace/UpgradeNamespace';
 
@@ -14,7 +14,7 @@ ReactDOM.render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App/>}/>
-                <Route path="/base-installation" element={<BasicInstallation/>}/>
+                <Route path="/base-installation" element={<BaseInstallation/>}/>
                 <Route path="/configure-namespace" element={<ConfigureNamespace/>}/>
                 <Route path="/upgrade-namespace" element={<UpgradeNamespace/>}/>
             </Routes>

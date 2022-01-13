@@ -1,13 +1,13 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import BasicInstallation from './BasicInstallation';
+import BaseInstallation from './BaseInstallation';
 
-describe('<BasicInstallation />', () => {
+describe('<BaseInstallation />', () => {
   test('it should mount', () => {
-    render(<BasicInstallation />);
-    
-    const basicInstallation = screen.getByTestId('BasicInstallation');
+    render(<BaseInstallation />);
+
+    const basicInstallation = screen.getByTestId('BaseInstallation');
 
     expect(basicInstallation).toBeInTheDocument();
   });

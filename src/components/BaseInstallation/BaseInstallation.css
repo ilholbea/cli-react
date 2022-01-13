@@ -1,0 +1,11 @@
+.form-select {
+    @apply appearance-none px-3 py-2 m-0 text-base font-normal text-black bg-white bg-clip-padding bg-no-repeat border border-solid border-gray-300 rounded transition ease-in-out focus:text-black focus:bg-white focus:border-blue-600 focus:outline-none;
+}
+
+.form-label{
+    @apply px-3 py-2 m-0 text-white font-normal;
+}
+
+.console{
+    @apply text-left text-white text-lg;
+}

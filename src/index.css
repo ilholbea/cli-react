@@ -13,38 +13,17 @@
 }
 
 .btn-primary {
-    @apply bg-blue-500 text-white;
+    @apply bg-heat-wave text-white;
 }
 
 .btn-primary:hover {
-    @apply bg-blue-700;
+    @apply bg-iceberg;
 }
 
 .btn-secondary {
-    @apply bg-blue-100 text-blue-700;
+    @apply bg-alice-blue text-yale-blue;
 }
 
 .btn-secondary:hover {
-    @apply bg-blue-300;
-}
-
-
-.btn-success{
-    @apply bg-green-500 text-white;
-}
-
-.btn-success:hover {
-    @apply bg-green-700;
-}
-
-.btn-warning{
-    @apply bg-yellow-500 text-white;
-}
-
-.btn-warning:hover {
-    @apply bg-yellow-700;
-}
-
-.circle{
-    border-radius: 1px;
+    @apply bg-iceberg;
 }
